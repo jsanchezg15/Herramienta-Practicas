@@ -1,0 +1,16 @@
+.progress {
+    position: relative;
+    height: 10px;
+    width: 40%;
+    border: 10px solid #ab0018;
+    border-radius: 15px;    
+    margin-bottom: 20px;
+
+    .color {
+        background-color: #f02844;
+        width: 0px;
+        height: 10px;
+        border-radius: 15px;
+        transform: translate(0%,-50%);
+    }
+}

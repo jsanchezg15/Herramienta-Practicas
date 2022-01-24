@@ -1,0 +1,28 @@
+@import '../../scss/index.scss';
+
+.dropzone {
+    width: 100%; 
+	height: 100%;
+	border-radius: 15px;
+
+	background-color: $primary-color-orange;
+    font-size: medium;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&__text {
+		color: $font-light;
+		text-transform: uppercase;
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+		font-size: 18px;
+		letter-spacing: 2px;
+	}
+}

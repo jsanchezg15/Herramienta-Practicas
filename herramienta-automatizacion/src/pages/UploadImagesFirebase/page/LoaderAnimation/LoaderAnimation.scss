@@ -1,0 +1,74 @@
+$loader--width: 100px;
+$loader-dot--size: 12px;
+
+.container {
+	height: 30px;
+	width: 100px;
+	margin-top: 30px;
+}
+
+.loader {
+	height: $loader-dot--size;
+	width: $loader--width;
+	position: absolute;
+	margin: auto;
+
+	&--dot {
+		animation: {
+			name: loader;
+			timing-function: ease-in-out;
+			duration: 2.6s;
+			iteration-count: infinite;
+		};
+		height: $loader-dot--size;
+		width:  $loader-dot--size;
+		border-radius: 100%;
+		background-color: black;
+		position: absolute;
+		
+		&:first-child {
+			background-color: #F02844;
+			animation-delay: 0.64s;
+		}
+
+		&:nth-child(2) {
+			background-color: #d4021d;
+			animation-delay: 0.52s;
+		}
+
+		&:nth-child(3) {
+			background-color: #ab0018;
+			animation-delay: 0.40s;
+		}
+
+		&:nth-child(4) {
+			background-color: #ff9f31;
+			animation-delay: 0.28s;
+		}
+
+		&:nth-child(5) {
+			background-color: #ee7f00;
+			animation-delay: 0.16s;
+		}
+
+		&:nth-child(6) {
+			background-color: #bd6500;
+			animation-delay: 0s;
+		}
+	}
+}
+
+@keyframes loader {
+	15% {
+		transform: translateX(0);
+	}
+	45% {
+		transform: translateX( $loader--width - $loader-dot--size );
+	}
+	65% {
+		transform: translateX( $loader--width - $loader-dot--size );
+	}
+	95% {
+		transform: translateX(0);
+	}
+}

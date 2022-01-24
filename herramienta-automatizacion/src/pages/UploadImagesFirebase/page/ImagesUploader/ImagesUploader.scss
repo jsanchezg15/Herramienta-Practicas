@@ -1,0 +1,170 @@
+@import "../../scss/index.scss";
+
+
+.images-uploader {
+	height: 100%;
+	width: 100%;
+  
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.htmlOutput {
+		margin-top: 50px;
+		width: 70%;
+		overflow: scroll;
+	}
+	
+	.imagesOutput {
+		margin-top: 30px;
+		width: 60%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	  
+	.dataInput {
+		margin: 50px;
+		width:  65vw;
+		height: 10vh;
+
+		.horizontal {
+			margin-top: 20px;
+	
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+	
+			.input {
+				width: 77%;
+				height: 80%;
+				transform: translate(0%, 10%);
+	
+				input {
+					background-color: $background-grey;
+					border:0;
+					font-size: 16px;
+					color: $font-light;
+							
+					&:hover,
+					&:active,
+					&:focus {
+						background-color: $background-grey-hover;
+						border: 0;
+					}
+				}
+						
+				i {
+					color: $font-light;
+					font-size: 19px; 
+				}
+						
+				&.error {
+					input {
+						border-bottom: 1px solid $danger; 
+					}
+				}
+			}
+				
+	
+			.button {
+				width: 20%;
+				background-color: $primary-color-orange;
+				color: $font-light;
+				text-transform: uppercase;
+				margin-top: 10px;
+				border-radius: 50px;
+				padding: 17px 0;
+				font-size: 14px;
+				letter-spacing: 3px;
+	
+				&:hover,
+				&:active,
+				&:focus {
+					background-color: $primary-color-orange;
+					color: $font-light;
+				}
+			}
+		}
+	  
+		.error-text {
+			color: $font-light;
+			padding-left: 15px;
+		}    
+	}
+	
+	.deleteButton {
+		width: 100%;
+		margin-top: 50px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		.button {
+			width: 10%;
+			background-color: $danger;
+			color: $font-light;
+			text-transform: uppercase;
+			margin-top: 10px;
+			border-radius: 50px;
+			padding: 17px 0;
+			font-size: 14px;
+			letter-spacing: 3px;
+
+			&:hover,
+			&:active,
+			&:focus {
+				background-color: $danger;
+				color: $font-light;
+			}
+		}
+	}
+
+	.copyButton {
+		width: 100%;
+		margin-top: 50px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		.button {
+			width: 10%;
+			background-color: $primary-color-orange;
+			color: $font-light;
+			text-transform: uppercase;
+			margin-top: 10px;
+			border-radius: 50px;
+			padding: 17px 0;
+			font-size: 14px;
+			letter-spacing: 3px;
+
+			&:hover,
+			&:active,
+			&:focus {
+				background-color: $primary-color-orange;
+				color: $font-light;
+			}
+		}
+	}
+	
+	.textLine {
+		margin: 0px;
+		text-align: start;
+		color: white;
+		
+		overflow: hidden;
+		text-overflow: ellipsis;
+		word-wrap: break-word;
+		display: block;
+	}
+	
+	.error {
+		.textLine {
+			color: red;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+@import '../../scss/index.scss';
+
+.main__card {
+	border-radius: 20px;
+	border: 7px solid $primary-color-orange;
+	
+	.ui.card {
+		border-radius: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.image {
+			margin: 5px;
+		}
+	}
+}
